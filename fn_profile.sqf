@@ -1,5 +1,17 @@
-// this execVM "scripts\fn_profile.sqf"
-params ["_object"];
+/*
+ * Author: CPL.Brostrom.A
+ * This function removes and recreates a given object or vehicle is in proximity.
+ * Run this function in the object or unit init.
+ *
+ * Arguments:
+ * 0: Object or Empty Vehicle <OBJECT>
+ *
+ * Example:
+ * this execVM "scripts\fn_profile.sqf"
+ *
+ */
+
+params [["_object", objNull, [objNull]]];
 
 private _classname = typeOf _object;
 private _postion   = getPosASL _object;

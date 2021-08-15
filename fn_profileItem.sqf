@@ -1,5 +1,21 @@
+/*
+ * Author: CPL.Brostrom.A
+ * This function removes and recreates a given item when within a proximity.
+ * Run this function in the object or unit init.
+ *
+ * Arguments:
+ * 0: Object <OBJECT>
+ *
+ * Example:
+ * this execVM "scripts\fn_profileItem.sqf"
+ * [this, true] execVM "scripts\fn_profileItem.sqf"
+ *
+ */
 
-params ["_object", ["_simulation", false, [false]]];
+params [
+    ["_object", objNull, [objNull]],
+    ["_simulation", false, [false]]
+];
 
 private _classname = typeOf _object;
 private _postion   = getPosASL _object;

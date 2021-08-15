@@ -1,3 +1,15 @@
+/*
+ * Author: CPL.Brostrom.A
+ * This function adjustes a given units inventory. Usefull for civilian units.
+ * Run this function in the unit init.
+ *
+ * Arguments:
+ * 0: Unit <OBJECT>
+ *
+ * Example:
+ * this execVM "scripts\fn_profileAsAgent.sqf"
+ *
+ */
 
 params ["_object"];
 

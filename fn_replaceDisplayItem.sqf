@@ -1,6 +1,21 @@
-// [this, ""] execVM "scripts\fn_replaceDisplayItem.sqf";
-// [this, "rhs_m4_compm4"] execVM "scripts\fn_replaceDisplayItem.sqf";
-// [this, "rhs_weap_m16a4_grip_acog"] execVM "scripts\fn_replaceDisplayItem.sqf";
+/*
+ * Author: CPL.Brostrom.A
+ * This function replace a weapon and removes the ability to pick it up.
+ * You can also specifie a config variant of a weapon.
+ * Run this function in the object init.
+ *
+ * Arguments:
+ * 0: Object <OBJECT>
+ * 1: Classname <NUMBER>
+ *
+ * Example:
+ * [this] execVM "scripts\fn_replaceDisplayItem.sqf";
+ * [this, ""] execVM "scripts\fn_replaceDisplayItem.sqf";
+ * [this, "rhs_m4_compm4"] execVM "scripts\fn_replaceDisplayItem.sqf";
+ * [this, "rhs_weap_m16a4_grip_acog"] execVM "scripts\fn_replaceDisplayItem.sqf";
+ *
+ */
+
 params [
     ["_carrier", objNull, [objNull]],
     ["_newDisplay", "", [""]]
