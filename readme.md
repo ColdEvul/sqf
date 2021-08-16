@@ -3,11 +3,11 @@
 ## Script snippets
 
 #### Heal everyone
-```cpp
+```js
 [player, player] call ace_medical_treatment_fnc_fullHeal
 ```
 
 #### Earplugs
-```cpp
+```js
 [player] call ace_hearing_fnc_putInEarplugs;
 ```
