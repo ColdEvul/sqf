@@ -7,7 +7,7 @@
  * 0: Unit <OBJECT>
  *
  * Example:
- * this execVM "scripts\fn_handleAgentInventory.sqf"
+ * this execVM "scripts\fn_setCivilianInventory.sqf"
  *
  */
 
