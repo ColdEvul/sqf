@@ -13,3 +13,9 @@ Here are some quick script snippets
 ```js
 [player] call ace_hearing_fnc_putInEarplugs;
 ```
+
+#### CBA Settings - Clear all settings
+```js
+// Server execute
+['server'] call CBA_settings_fnc_clear;
+```
