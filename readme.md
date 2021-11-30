@@ -23,3 +23,14 @@ if (isServer) exitWith {};
 // Server execute
 ['server'] call CBA_settings_fnc_clear;
 ```
+
+#### cScripts - Set a Loadout
+
+```js
+// Target Client, Local or Global execute
+[player, "Cav_B_C_Rifleman_F"] call cScripts_fnc_gear_applyLoadout;
+[player, "Cav_B_B_Scout_Rifleman_F"] call cScripts_fnc_gear_applyLoadout;
+
+// Naked player:
+[player, [[],[],[],[],[],[],"","",[],["","","","","",""]]] call cScripts_fnc_gear_applyLoadout;
+```
