@@ -33,4 +33,4 @@ if (_global) then {
     _fnc remoteExec ["call", -2];
 } else {
    call _fnc;
-}
+};
