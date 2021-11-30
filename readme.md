@@ -1,6 +1,8 @@
 # SQF Scripts
+Profile script means that the object is removed and recreated based on proximity. 
 
 ## Script snippets
+Here are some quick script snippets 
 
 #### Heal player
 ```js
