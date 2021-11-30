@@ -19,8 +19,8 @@ private _fnc = {
     if (isServer) exitWith {};
     [format["%1; %2 (%3)", name player, netId player, typeOf player]] remoteExec ["systemChat", -2]; 
     { 
-        _radio = _x; 
-        _radioArray = [_radio] call acre_api_fnc_getAllRadiosByType; 
+        private _radio = _x; 
+        private _radioArray = [_radio] call acre_api_fnc_getAllRadiosByType; 
         if ((count _radioArray) > 0 ) then { 
             [format["%1 (Size: %2)", _radioArray, (count _radioArray)]] remoteExec ["systemChat", -2]; 
             [formatText["%1: %2 (Size: %3)", name player, _radioArray, (count _radioArray)], "RADIO", false, true, "DEBUG"] call cScripts_fnc_log;
