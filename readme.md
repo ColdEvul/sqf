@@ -28,9 +28,16 @@ if (isServer) exitWith {};
 
 ```js
 // Target Client, Local or Global execute
+if (isServer) exitWith {};
 [player, "Cav_B_C_Rifleman_F"] call cScripts_fnc_gear_applyLoadout;
+```
+```js 
+// Target Client, Local or Global execute
+if (isServer) exitWith {};
 [player, "Cav_B_B_Scout_Rifleman_F"] call cScripts_fnc_gear_applyLoadout;
-
-// Naked player:
+```
+```js
+// Target Client, Local or Global execute
+if (isServer) exitWith {};
 [player, [[],[],[],[],[],[],"","",[],["","","","","",""]]] call cScripts_fnc_gear_applyLoadout;
 ```
