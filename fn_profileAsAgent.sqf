@@ -2,7 +2,6 @@
  * Author: CPL.Brostrom.A
  * This function removes and recreates a given unit as a agent when in proximity.
  * Run this function in the object or unit init.
- * Requires: fn_handleAgentInventory.sqf
  *
  * Arguments:
  * 0: Unit <OBJECT>
