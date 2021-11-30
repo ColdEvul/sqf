@@ -1,14 +1,15 @@
 /*
  * Author: CPL.Brostrom.A
- * This function dump all radios with their ID used by all players in the RPT and chat.
+ * This function dump all radios with their ID used by players in the RPT and chat.
+ * This function can be executed globaly within the function by passing true as first argument.
  * Run this function in a debug console localy or on server
  *
  * Arguments:
- * 0: Object <OBJECT>
- * 1: Brightness <NUMBER>
+ * 0: Execute Globaly <BOOL> (Optional)
  *
  * Example:
  * execVM "scripts\fn_debug_dumpPlayerRadio.sqf";
+ * [true] execVM "scripts\fn_debug_dumpPlayerRadio.sqf";
  *
  */
  
