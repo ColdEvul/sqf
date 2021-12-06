@@ -20,8 +20,7 @@ if (isServer) exitWith {};
 
 #### Add radio to player inventory
 ```js
-// Local or Global execute
-if (isServer) exitWith {};
+// Local or Server execute
 [player, "ACRE_PRC343"] call CBA_fnc_addItem;
 [player, "ACRE_PRC152"] call CBA_fnc_addItem;
 ```
@@ -33,7 +32,6 @@ if (isServer) exitWith {};
 ```
 
 #### cScripts - Set a Loadout
-
 ```js
 // Target Client, Local or Global execute
 if (isServer) exitWith {};
