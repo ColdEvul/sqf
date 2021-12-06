@@ -18,6 +18,14 @@ if (isServer) exitWith {};
 [player] call ace_hearing_fnc_putInEarplugs;
 ```
 
+#### Add radio to player inventory
+```js
+// Local or Global execute
+if (isServer) exitWith {};
+[player, "ACRE_PRC343"] call CBA_fnc_addItem;
+[player, "ACRE_PRC152"] call CBA_fnc_addItem;
+```
+
 #### CBA Settings - Clear all settings
 ```js
 // Server execute
