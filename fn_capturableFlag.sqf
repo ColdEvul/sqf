@@ -12,7 +12,6 @@
  * Example:
  * [this] execVM "scripts\fn_capturableFlag.sqf";
  * [this, 3] execVM "scripts\fn_capturableFlag.sqf";
- *
  */
 
 params [
