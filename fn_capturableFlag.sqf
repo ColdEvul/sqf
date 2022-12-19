@@ -37,7 +37,7 @@ fn_getFlagTexture ={
 
 fn_setFlagOwner = {
     params ["_object", "_side"];
-    _side setVariable ["flagPoleSideOwner", _side];
+    _object setVariable ["flagPoleSideOwner", _side];
     private _flag = _side call fn_getFlagTexture;
     _object setFlagTexture _flag;
 };
