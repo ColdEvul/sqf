@@ -58,7 +58,7 @@ private _fn_codeProgress = {
 private _fn_codeCompleted = {
     params ["_target", "_caller", "_actionId", "_arguments"];
     private _playerSide = [side _caller] call BIS_fnc_sideID;
-    _playerSide call fn_setFlagOwner;
+    [_target, _playerSide] call fn_setFlagOwner;
 };
 
 [
