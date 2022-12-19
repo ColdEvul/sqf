@@ -40,12 +40,11 @@ fn_setFlagOwner = {
     _side setVariable ["flagPoleSideOwner", _side];
     private _flag = _side call fn_getFlagTexture;
     _object setFlagTexture _flag;
-}
+};
 
 
 
 // Init
-private _getFlag = _startingSide call fn_getFlagTexture;
 [_object, _startingSide] call fn_setFlagOwner;
 
 
