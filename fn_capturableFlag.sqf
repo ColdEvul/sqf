@@ -70,7 +70,7 @@ private _fn_codeCompleted = {
     {},
     _fn_codeProgress,
     _fn_codeCompleted,
-    { hint "Afraid of death?" },
+    {},
     [],
     10,
     nil,
