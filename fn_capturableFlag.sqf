@@ -4,7 +4,7 @@
  *
  * Arguments:
  * 0: Object <OBJECT>
- * 1: Side owner <NUMBER> [Default; 3] (Optional)
+ * 1: Starting Side <NUMBER> [Default; 3] (Optional)
  *
  * Return:
  * True or False on success
@@ -17,7 +17,7 @@
 
 params [
     ["_object", objNull, [objNull]],
-    ["_side", 3, [3]]
+    ["_startingSide", 3, [3]]
 ];
 
 if (isNull _object) exitWith { diag_log "Error: No object defined"; false };
@@ -44,9 +44,11 @@ fn_setFlagOwner = {
 }
 
 
+
 // Init
-private _getFlag = _side call fn_getFlagTexture;
-[_object, _side] call fn_setFlagOwner;
+private _getFlag = _startingSide call fn_getFlagTexture;
+[_object, _startingSide] call fn_setFlagOwner;
+
 
 
 // Actions
@@ -64,11 +66,11 @@ private _fn_codeCompleted = {
     _object,
     "Capture flag",
     "", "",
-    "_this distance _target < 3".
+    "_this distance _target < 3",
     "_caller distance _target < 3",
     {},
     _fn_codeProgress,
-    _fn_flag_completed,
+    _fn_codeCompleted,
     { hint "Afraid of death?" },
     [],
     10,
