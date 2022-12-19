@@ -19,7 +19,7 @@ params [
     ["_startingSide", 3, [3]]
 ];
 
-if (isNull _object) exitWith { diag_log "Error: No object defined"; false };
+if (isNull _object) exitWith { diag_log "Error: No object defined"; false; };
 
 // Functions
 fn_getFlagTexture ={
