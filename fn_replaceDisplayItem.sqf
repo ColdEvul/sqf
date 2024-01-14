@@ -6,7 +6,7 @@
  *
  * Arguments:
  * 0: Object <OBJECT>
- * 1: Classname <NUMBER>
+ * 1: Classname <STRING> (Optional)
  *
  * Example:
  * [this] execVM "scripts\fn_replaceDisplayItem.sqf";
