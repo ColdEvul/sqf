@@ -22,7 +22,7 @@ params [
 if (isNull _object) exitWith { diag_log "Error: No object defined"; false; };
 
 // Functions
-fn_getFlagTexture ={
+fn_getFlagTexture = {
     params ["_side"];
     private _return = switch (_side) do
     {
